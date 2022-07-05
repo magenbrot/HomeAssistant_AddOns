@@ -24,11 +24,8 @@ profile local_audio_play flags=(attach_disconnected,mediate_deleted) {
   /usr/lib/bashio/** ix,
   /tmp/** rwk,
 
-  # Access to options.json and other files within your addon
-  /data/** rw,
-
   # Start new profile for service
-  /usr/bin/my_program cx -> my_program,
+  /run.sh cx -> my_program,
 
   profile my_program flags=(attach_disconnected,mediate_deleted) {
     #include <abstractions/base>
@@ -48,7 +45,7 @@ profile local_audio_play flags=(attach_disconnected,mediate_deleted) {
     # 2. Add `complain` as a flag to this profile temporarily and run the addon
     # 3. Review the audit log with `journalctl _TRANSPORT="audit" -g 'apparmor="ALLOWED"'` and add other access as needed
     # Remember to remove the `complain` flag when you are done
-    /usr/bin/my_program r,
+    /run.sh r,
     /bin/bash rix,
     /bin/echo ix,
     /etc/passwd r,
