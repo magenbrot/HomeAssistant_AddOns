@@ -15,6 +15,9 @@ Also works on virtual hardware if the audio device is passed through.
 [armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
 [i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
 
+[![Lint](https://github.com/magenbrot/HomeAssistant_AddOns/actions/workflows/lint.yaml/badge.svg)](https://github.com/magenbrot/HomeAssistant_AddOns/actions/workflows/lint.yaml)
+[![Codacy Security Scan](https://github.com/magenbrot/HomeAssistant_AddOns/actions/workflows/codacy.yml/badge.svg)](https://github.com/magenbrot/HomeAssistant_AddOns/actions/workflows/codacy.yml)
+
 ## Source
 
 This add-on is inspired by Dingedan's local_audio_player add-on (<https://github.com/dingedan/Hassio_addons>)
