@@ -1,5 +1,5 @@
 name: "Local Audio Play"
-version: "2022.7.22"
+version: "2022.7.0"
 slug: "local_audio_play"
 description: >-
   Call the local Alsa aplay command to play or generate sound
