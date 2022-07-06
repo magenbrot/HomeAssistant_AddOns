@@ -21,4 +21,4 @@ map:
   - media
 codenotary: "oliver@voelker.me"
 #stage: experimental
-image: "ghcr.io/magenbrot/{arch}-local-audio-play"
+#image: "ghcr.io/magenbrot/{arch}-local-audio-play"
