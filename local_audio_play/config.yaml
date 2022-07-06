@@ -5,10 +5,10 @@ description: >-
   Play local audio with mpg123
 arch:
   - amd64
-  # - armhf
-  # - armv7
-  # - aarch64
-  # - i386
+  - armhf
+  - armv7
+  - aarch64
+  - i386
 url: "https://github.com/magenbrot/HomeAssistant_AddOns/tree/main/local_audio_play"
 stdin: true
 audio: true
@@ -21,4 +21,4 @@ map:
   - media
 codenotary: "oliver@voelker.me"
 #stage: experimental
-#image: "ghcr.io/magenbrot/{arch}-local-audio-play"
+image: "ghcr.io/magenbrot/{arch}-local-audio-play"
