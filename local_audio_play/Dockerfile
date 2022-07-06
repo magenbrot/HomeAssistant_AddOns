@@ -7,8 +7,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 # Setup base, install sox package
 RUN apk add --no-cache jq alsa-utils alsa-plugins-pulse mpg123
 
-# Copy data
-COPY run.sh /
-RUN chmod a+x /run.sh
-
-CMD [ "/run.sh" ]
+# Copy root filesystem
+COPY rootfs /
+RUN chmod a+x /usr/bin/run.sh
+CMD [ "/usr/bin/run.sh" ]

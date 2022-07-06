@@ -15,4 +15,4 @@ while read -r input; do
   if ! msg=$(mpg123 "${input}"); then
     bashio::log.error "Playing failed: ${msg}"
   fi
-done
+done < /dev/stdin

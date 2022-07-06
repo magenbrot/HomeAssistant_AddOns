@@ -1,14 +1,14 @@
-name: "Local Audio Play"
 version: "2022.7.0"
+name: "Local Audio Play"
 slug: "local_audio_play"
 description: >-
-  Call the local Alsa aplay command to play or generate sound
+  Play local audio with mpg123
 arch:
   - amd64
-  - armhf
-  - armv7
-  - aarch64
-  - i386
+  # - armhf
+  # - armv7
+  # - aarch64
+  # - i386
 url: "https://github.com/magenbrot/HomeAssistant_AddOns/tree/main/local_audio_play"
 stdin: true
 audio: true
@@ -20,4 +20,5 @@ schema:
 map:
   - media
 codenotary: "oliver@voelker.me"
-image: "ghcr.io/magenbrot/{arch}-local-audio-play"
+#stage: experimental
+#image: "ghcr.io/magenbrot/{arch}-local-audio-play"

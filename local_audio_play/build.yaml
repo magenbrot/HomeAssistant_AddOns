@@ -7,3 +7,8 @@ build_from:
 codenotary:
   signer: "oliver@voelker.me"
   base_image: "notary@home-assistant.io"
+labels:
+  org.opencontainers.image.title: "Home Assistant Add-on: Local Audio Play"
+  org.opencontainers.image.description: "Play audio on the local hardware"
+  org.opencontainers.image.source: "https://github.com/magenbrot/HomeAssistant_AddOns"
+  org.opencontainers.image.licenses: "GNU General Public License v3.0"

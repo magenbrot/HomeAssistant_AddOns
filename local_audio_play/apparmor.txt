@@ -25,9 +25,9 @@ profile local_audio_play flags=(attach_disconnected,mediate_deleted) {
   /tmp/** rwk,
 
   # Start new profile for service
-  /run.sh cx -> my_program,
+  /usr/bin/run.sh cx -> local_audio_play,
 
-  profile my_program flags=(attach_disconnected,mediate_deleted) {
+  profile local_audio_play flags=(attach_disconnected,mediate_deleted) {
     #include <abstractions/base>
 
     # Receive signals from S6-Overlay
@@ -45,7 +45,7 @@ profile local_audio_play flags=(attach_disconnected,mediate_deleted) {
     # 2. Add `complain` as a flag to this profile temporarily and run the addon
     # 3. Review the audit log with `journalctl _TRANSPORT="audit" -g 'apparmor="ALLOWED"'` and add other access as needed
     # Remember to remove the `complain` flag when you are done
-    /run.sh r,
+    /usr/bin/run.sh r,
     /bin/bash rix,
     /bin/echo ix,
     /etc/passwd r,
