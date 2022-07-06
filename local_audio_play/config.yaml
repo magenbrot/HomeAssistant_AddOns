@@ -1,4 +1,4 @@
-version: "2022.7.1"
+version: "2022.7.2"
 name: "Local Audio Play"
 slug: "local_audio_play"
 description: >-
@@ -21,4 +21,4 @@ map:
   - media
 codenotary: "oliver@voelker.me"
 #stage: experimental
-#image: "ghcr.io/magenbrot/{arch}-local-audio-play"
+image: "ghcr.io/magenbrot/{arch}-local-audio-play"
