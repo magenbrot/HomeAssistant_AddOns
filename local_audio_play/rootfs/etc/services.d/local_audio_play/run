@@ -1,0 +1,8 @@
+#!/command/execlineb -P
+# ==============================================================================
+# Start the program
+# s6-overlay docs: https://github.com/just-containers/s6-overlay
+# ==============================================================================
+
+#exec 2>&1
+exec /usr/bin/run.sh

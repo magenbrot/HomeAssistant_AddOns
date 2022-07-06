@@ -9,5 +9,4 @@ RUN apk add --no-cache jq alsa-utils alsa-plugins-pulse mpg123
 
 # Copy root filesystem
 COPY rootfs /
-RUN chmod a+x /usr/bin/run.sh
-CMD [ "/usr/bin/run.sh" ]
+
