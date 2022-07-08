@@ -11,6 +11,6 @@ Example:
 ```yaml
 service: hassio.addon_stdin
 data:
-  addon: 18067253_local_audio_play
+  addon: <id>_local_audio_play
   input: media/SurfinBird.mp3
 ```
