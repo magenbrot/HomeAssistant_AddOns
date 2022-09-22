@@ -1,5 +1,5 @@
 ---
-version: "2022.7.64"
+version: "2022.9.0"
 name: "Local Audio Play"
 slug: "local_audio_play"
 description: >-
@@ -14,7 +14,6 @@ url: "https://github.com/magenbrot/HomeAssistant_AddOns/tree/main/local_audio_pl
 stdin: true
 audio: true
 init: false
-apparmor: true
 journald: true
 map:
   - media
@@ -27,5 +26,5 @@ options:
 schema:
   volume: "int(0,100)?"
   player: "match(mpg123|play|aplay)?"
-#image: "ghcr.io/magenbrot/{arch}-local-audio-play"
-#codenotary: "oliver@voelker.me"
+image: "ghcr.io/magenbrot/{arch}-local-audio-play"
+codenotary: "oliver@voelker.me"
