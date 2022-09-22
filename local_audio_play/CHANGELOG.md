@@ -1,3 +1,3 @@
-## 2022.7.0
+## 2022.9.2
 
-- Initial release
+- Public release
