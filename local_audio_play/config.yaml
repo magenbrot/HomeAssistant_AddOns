@@ -1,5 +1,5 @@
 ---
-version: "2022.9.4"
+version: "2022.9.5"
 name: "Local Audio Play"
 slug: "local_audio_play"
 description: >-
@@ -27,4 +27,4 @@ schema:
   volume: "int(0,100)?"
   player: "match(mpg123|play|aplay)?"
 image: "ghcr.io/magenbrot/{arch}-local-audio-play"
-codenotary: "oliver@voelker.me"
+#codenotary: "oliver@voelker.me"
