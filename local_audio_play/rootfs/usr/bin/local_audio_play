@@ -1,0 +1,20 @@
+#!/command/with-contenv bashio
+# shellcheck shell=bash
+
+set -e
+
+VERSION=$(bashio::addon.version)
+VOLUME=$(bashio::config 'volume' '80')
+PLAYER=$(bashio::config 'player' 'mpg123')
+
+bashio::log.info "local_audio_play ${VERSION} starting"
+bashio::log.info "Set volume to ${VOLUME}% and use '${PLAYER}' to play audio"
+amixer -q sset 'Master' "${VOLUME}%"
+
+while read -r input; do
+  bashio::log.info "call: ${PLAYER} ${input}"
+  input=$(bashio::jq "${input}")
+  if ! msg=$(${PLAYER} "${input}"); then
+    bashio::log.error "Playing failed: ${msg}"
+  fi
+done

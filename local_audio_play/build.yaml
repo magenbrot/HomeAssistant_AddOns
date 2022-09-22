@@ -1,0 +1,15 @@
+---
+build_from:
+  aarch64: "ghcr.io/home-assistant/aarch64-base"
+  amd64: "ghcr.io/home-assistant/amd64-base"
+  armhf: "ghcr.io/home-assistant/armhf-base"
+  armv7: "ghcr.io/home-assistant/armv7-base"
+  i386: "ghcr.io/home-assistant/i386-base"
+# codenotary:
+#   signer: "oliver@voelker.me"
+#   base_image: "notary@home-assistant.io"
+labels:
+  org.opencontainers.image.title: "Home Assistant Add-on: Local Audio Play"
+  org.opencontainers.image.description: "Play audio on the local hardware"
+  org.opencontainers.image.source: "https://github.com/magenbrot/HomeAssistant_AddOns"
+  org.opencontainers.image.licenses: "GNU General Public License v3.0"

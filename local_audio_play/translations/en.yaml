@@ -1,0 +1,10 @@
+---
+configuration:
+  volume:
+    name: Volume
+    description: >-
+      Set volume for playback 0-100
+  player:
+    name: Select the player
+    description: >-
+      Currently supported players are: 'mpg123', 'play' (sox) and 'aplay' (alsa-utils)

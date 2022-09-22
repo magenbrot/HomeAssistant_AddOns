@@ -1,0 +1,31 @@
+---
+version: "2022.7.64"
+name: "Local Audio Play"
+slug: "local_audio_play"
+description: >-
+  Play local audio with various audio players
+arch:
+  - amd64
+  - armhf
+  - armv7
+  - aarch64
+  - i386
+url: "https://github.com/magenbrot/HomeAssistant_AddOns/tree/main/local_audio_play"
+stdin: true
+audio: true
+init: false
+apparmor: true
+journald: true
+map:
+  - media
+options:
+  volume: "80"
+  player:
+    - "mpg123"
+    - "play"
+    - "aplay"
+schema:
+  volume: "int(0,100)?"
+  player: "match(mpg123|play|aplay)?"
+#image: "ghcr.io/magenbrot/{arch}-local-audio-play"
+#codenotary: "oliver@voelker.me"
