@@ -41,7 +41,7 @@ LABEL \
     org.opencontainers.image.description="${BUILD_DESCRIPTION}" \
     org.opencontainers.image.vendor="magenbrot's HomeAssistant Add-ons" \
     org.opencontainers.image.authors="Oliver Völker <oliver@voelker.me>" \
-    org.opencontainers.image.licenses="MIT" \
+    org.opencontainers.image.licenses="GPLv3" \
     org.opencontainers.image.url="https://github.com/magenbrot/HomeAssistant_AddOns" \
     org.opencontainers.image.source="https://github.com/${BUILD_REPOSITORY}" \
     org.opencontainers.image.documentation="https://github.com/${BUILD_REPOSITORY}/blob/main/README.md" \

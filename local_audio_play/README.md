@@ -17,7 +17,6 @@ Also works on virtual hardware if the audio device is passed through.
 
 [![Builder](https://github.com/magenbrot/HomeAssistant_AddOns/actions/workflows/builder.yaml/badge.svg)](https://github.com/magenbrot/HomeAssistant_AddOns/actions/workflows/builder.yaml)
 [![Lint](https://github.com/magenbrot/HomeAssistant_AddOns/actions/workflows/lint.yaml/badge.svg)](https://github.com/magenbrot/HomeAssistant_AddOns/actions/workflows/lint.yaml)
-[![Codacy Security Scan](https://github.com/magenbrot/HomeAssistant_AddOns/actions/workflows/codacy.yml/badge.svg)](https://github.com/magenbrot/HomeAssistant_AddOns/actions/workflows/codacy.yml)
 
 ## Source
 

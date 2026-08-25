@@ -6,10 +6,7 @@ description: >-
   Play local audio with various audio players
 arch:
   - amd64
-  - armhf
-  - armv7
   - aarch64
-  - i386
 url: "https://github.com/magenbrot/HomeAssistant_AddOns/tree/main/local_audio_play"
 stdin: true
 audio: true

@@ -5,6 +5,6 @@ configuration:
     description: >-
       Wiedergabelautstärke von 0-100
   player:
-    name: Select the player
+    name: Player auswählen
     description: >-
       Momentan unterstützte Player: 'mpg123', 'play' (sox) and 'aplay' (alsa-utils)
